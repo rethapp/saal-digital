@@ -32,11 +32,13 @@ namespace WeatherForecastApiExt
 		public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILogger<Startup> logger)
 		{
 			app.UseExceptionHandlerMiddleware();
+
 			using var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope();
-			var context = serviceScope.ServiceProvider.GetRequiredService<WeatherDbContext>();
-			//AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
+			var context = serviceScope.ServiceProvider.GetRequiredService<WeatherDbContext>();			
 			context.Database.Migrate();
+
 			logger.LogInformation("Database Migrated sucessfully");
+
 			if (env.IsDevelopment())
 			{
 				app.UseDeveloperExceptionPage();
