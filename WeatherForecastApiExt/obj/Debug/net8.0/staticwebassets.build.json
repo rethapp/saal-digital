@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LfS3lElDP1o8bvUbaDPb6WyW92IPADzOU0640fS32Cc=",
+  "Source": "WeatherForecastApiExt",
+  "BasePath": "_content/WeatherForecastApiExt",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
