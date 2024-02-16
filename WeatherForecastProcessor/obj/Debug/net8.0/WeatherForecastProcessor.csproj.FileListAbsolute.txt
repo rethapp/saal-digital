@@ -55,3 +55,4 @@ D:\experiments\saal-digital\WeatherForecastProcessor\obj\Debug\net8.0\refint\Wea
 D:\experiments\saal-digital\WeatherForecastProcessor\obj\Debug\net8.0\WeatherForecastProcessor.pdb
 D:\experiments\saal-digital\WeatherForecastProcessor\obj\Debug\net8.0\WeatherForecastProcessor.genruntimeconfig.cache
 D:\experiments\saal-digital\WeatherForecastProcessor\obj\Debug\net8.0\ref\WeatherForecastProcessor.dll
+D:\experiments\saal-digital\WeatherForecastProcessor\obj\Debug\net8.0\WeatherForecastProcessor.sourcelink.json

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8EgYackkYE08rcQxykQutIhnay8XhQ8H8XIRGgjgt1K4NpeMKUD+PA9ZU0uPhZolf5aWJ0H57ruRbEIU6ZW6/w==",
+  "dgSpecHash": "wvSoC++Q/AkG2WFj0QKd2LzirHUCV57W1C2HgBo2PJgthy6JtaOIY5zNvFvoIgzSzgh7pQ6yIY8ZY/8MNaWZ7Q==",
   "success": true,
   "projectFilePath": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\WeatherForecastApiExt.csproj",
   "expectedPackageFiles": [
@@ -30,6 +30,7 @@
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
+    "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.0-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.0-preview.1.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\npgsql\\8.0.0\\npgsql.8.0.0.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\8.0.0\\npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",

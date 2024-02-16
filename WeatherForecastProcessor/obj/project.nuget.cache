@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "oRhzOuTqb038MZscRfba/p2cKAqbVqnDF1g22t9vlvgIqCI8AtxbEp30TJ7qpVhiAcjLdsJ9CfOthjHkk7a2DQ==",
+  "dgSpecHash": "mBV/Q6NL1HBTfWCs12tBcc+lQjnZhgMuVWvN5Ytzs/vPXzoS6lc/6nbcDopVK/6xws4QXNfbQi8GFdeYxDwI7g==",
   "success": true,
   "projectFilePath": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\WeatherForecastProcessor.csproj",
   "expectedPackageFiles": [
@@ -33,6 +33,7 @@
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.extensions.options.configurationextensions\\8.0.0\\microsoft.extensions.options.configurationextensions.8.0.0.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
+    "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.0-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.0-preview.1.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\npgsql\\8.0.2\\npgsql.8.0.2.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",

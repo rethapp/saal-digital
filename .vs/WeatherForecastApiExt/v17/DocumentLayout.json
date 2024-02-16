@@ -3,36 +3,32 @@
   "WorkspaceRootPath": "D:\\experiments\\saal-digital\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|d:\\experiments\\saal-digital\\weatherforecastprocessor\\repositories\\weatherforecastrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|solutionrelative:weatherforecastprocessor\\repositories\\weatherforecastrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|d:\\experiments\\saal-digital\\weatherforecastapiext\\migrations\\20240215163800_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|solutionrelative:weatherforecastapiext\\migrations\\20240215163800_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|d:\\experiments\\saal-digital\\weatherforecastprocessor\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|solutionrelative:weatherforecastprocessor\\worker.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|d:\\experiments\\saal-digital\\weatherforecastprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|solutionrelative:weatherforecastprocessor\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D278D705-978D-4949-8D29-9E004759431D}|WeatherForecastAdmin\\WeatherForecastAdmin.csproj|d:\\experiments\\saal-digital\\weatherforecastadmin\\integrations\\weatherforecastaddnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D278D705-978D-4949-8D29-9E004759431D}|WeatherForecastAdmin\\WeatherForecastAdmin.csproj|solutionrelative:weatherforecastadmin\\integrations\\weatherforecastaddnotification.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|d:\\experiments\\saal-digital\\weatherforecastprocessor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|solutionrelative:weatherforecastprocessor\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|d:\\experiments\\saal-digital\\weatherforecastprocessor\\repositories\\iweatherforecastrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|solutionrelative:weatherforecastprocessor\\repositories\\iweatherforecastrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|d:\\experiments\\saal-digital\\weatherforecastapiext\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|solutionrelative:weatherforecastapiext\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|d:\\experiments\\saal-digital\\weatherforecastprocessor\\models\\weatherforecastreceivedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1483F70B-1002-47DF-92A5-CF241200E412}|WeatherForecastProcessor\\WeatherForecastProcessor.csproj|solutionrelative:weatherforecastprocessor\\models\\weatherforecastreceivedmessage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D278D705-978D-4949-8D29-9E004759431D}|WeatherForecastAdmin\\WeatherForecastAdmin.csproj|d:\\experiments\\saal-digital\\weatherforecastadmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{D278D705-978D-4949-8D29-9E004759431D}|WeatherForecastAdmin\\WeatherForecastAdmin.csproj|solutionrelative:weatherforecastadmin\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|d:\\experiments\\saal-digital\\weatherforecastapiext\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|solutionrelative:weatherforecastapiext\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|d:\\experiments\\saal-digital\\weatherforecastapiext\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|solutionrelative:weatherforecastapiext\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D278D705-978D-4949-8D29-9E004759431D}|WeatherForecastAdmin\\WeatherForecastAdmin.csproj|d:\\experiments\\saal-digital\\weatherforecastadmin\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D278D705-978D-4949-8D29-9E004759431D}|WeatherForecastAdmin\\WeatherForecastAdmin.csproj|solutionrelative:weatherforecastadmin\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|d:\\experiments\\saal-digital\\weatherforecastapiext\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{19E6F6BA-CB2B-48BB-8E2A-E6F9C8CCB2CF}|WeatherForecastApiExt\\WeatherForecastApiExt.csproj|solutionrelative:weatherforecastapiext\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
   ],
   "DocumentGroupContainers": [
@@ -47,105 +43,92 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "WeatherForecastRepository.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Repositories\\WeatherForecastRepository.cs",
-              "RelativeDocumentMoniker": "WeatherForecastProcessor\\Repositories\\WeatherForecastRepository.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Repositories\\WeatherForecastRepository.cs",
-              "RelativeToolTip": "WeatherForecastProcessor\\Repositories\\WeatherForecastRepository.cs",
-              "ViewState": "AQIAABAAAAAAAAAAAAAuwBUAAABHAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:06:51.942Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IWeatherForecastRepository.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Repositories\\IWeatherForecastRepository.cs",
-              "RelativeDocumentMoniker": "WeatherForecastProcessor\\Repositories\\IWeatherForecastRepository.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Repositories\\IWeatherForecastRepository.cs",
-              "RelativeToolTip": "WeatherForecastProcessor\\Repositories\\IWeatherForecastRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:05:59.412Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Worker.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Worker.cs",
-              "RelativeDocumentMoniker": "WeatherForecastProcessor\\Worker.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Worker.cs",
-              "RelativeToolTip": "WeatherForecastProcessor\\Worker.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAAAAEcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:01:31.511Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Program.cs",
-              "RelativeDocumentMoniker": "WeatherForecastProcessor\\Program.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Program.cs",
-              "RelativeToolTip": "WeatherForecastProcessor\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:01:25.406Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20240215163800_InitialMigration.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Migrations\\20240215163800_InitialMigration.cs",
-              "RelativeDocumentMoniker": "WeatherForecastApiExt\\Migrations\\20240215163800_InitialMigration.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Migrations\\20240215163800_InitialMigration.cs",
-              "RelativeToolTip": "WeatherForecastApiExt\\Migrations\\20240215163800_InitialMigration.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAACQAAABkAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:47:34.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\appsettings.json",
               "RelativeDocumentMoniker": "WeatherForecastProcessor\\appsettings.json",
               "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\appsettings.json",
               "RelativeToolTip": "WeatherForecastProcessor\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAYAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABxAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-02-16T07:07:55.475Z",
+              "WhenOpened": "2024-02-16T12:29:47.057Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\appsettings.json",
+              "RelativeDocumentMoniker": "WeatherForecastApiExt\\appsettings.json",
+              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\appsettings.json",
+              "RelativeToolTip": "WeatherForecastApiExt\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-16T12:29:38.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\appsettings.json",
+              "RelativeDocumentMoniker": "WeatherForecastAdmin\\appsettings.json",
+              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\appsettings.json",
+              "RelativeToolTip": "WeatherForecastAdmin\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-02-16T12:29:29.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "WeatherForecastApiExt\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "WeatherForecastApiExt\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-16T12:20:35.648Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "WeatherForecastAddNotification.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\Integrations\\WeatherForecastAddNotification.cs",
-              "RelativeDocumentMoniker": "WeatherForecastAdmin\\Integrations\\WeatherForecastAddNotification.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\Integrations\\WeatherForecastAddNotification.cs",
-              "RelativeToolTip": "WeatherForecastAdmin\\Integrations\\WeatherForecastAddNotification.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA7AAAA",
+              "Title": "Startup.cs",
+              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Startup.cs",
+              "RelativeDocumentMoniker": "WeatherForecastApiExt\\Startup.cs",
+              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Startup.cs",
+              "RelativeToolTip": "WeatherForecastApiExt\\Startup.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:26:21.141Z",
+              "WhenOpened": "2024-02-16T12:18:56.12Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "WeatherForecastReceivedMessage.cs",
-              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Models\\WeatherForecastReceivedMessage.cs",
-              "RelativeDocumentMoniker": "WeatherForecastProcessor\\Models\\WeatherForecastReceivedMessage.cs",
-              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastProcessor\\Models\\WeatherForecastReceivedMessage.cs",
-              "RelativeToolTip": "WeatherForecastProcessor\\Models\\WeatherForecastReceivedMessage.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-02-16T07:05:04.241Z",
+              "DocumentIndex": 6,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Dockerfile",
+              "RelativeDocumentMoniker": "WeatherForecastApiExt\\Dockerfile",
+              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastApiExt\\Dockerfile",
+              "RelativeToolTip": "WeatherForecastApiExt\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-16T12:09:58.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\Dockerfile",
+              "RelativeDocumentMoniker": "WeatherForecastAdmin\\Dockerfile",
+              "ToolTip": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\Dockerfile",
+              "RelativeToolTip": "WeatherForecastAdmin\\Dockerfile",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-02-16T12:02:40.087Z",
               "EditorCaption": ""
             }
           ]

@@ -31,3 +31,4 @@ D:\experiments\saal-digital\WeatherForecastAdmin\obj\Debug\net8.0\refint\Weather
 D:\experiments\saal-digital\WeatherForecastAdmin\obj\Debug\net8.0\WeatherForecastAdmin.pdb
 D:\experiments\saal-digital\WeatherForecastAdmin\obj\Debug\net8.0\WeatherForecastAdmin.genruntimeconfig.cache
 D:\experiments\saal-digital\WeatherForecastAdmin\obj\Debug\net8.0\ref\WeatherForecastAdmin.dll
+D:\experiments\saal-digital\WeatherForecastAdmin\obj\Debug\net8.0\WeatherForecastAdmin.sourcelink.json

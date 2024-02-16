@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "IPSHMrMBsy+N/DxS8BghSVqpw7RT1GghkI7vNApTAJtgqdFTZCpGrAxdZ56+5W2v09RUdory7bX48EyVuZnyuQ==",
+  "dgSpecHash": "w07NFWLJ1BILWEEY/U1BF9Yeyn17z8ZSdGYMrk34PCNWgDFwa2vDTPazWQB3gE4kFz80zCJzr1wPVU5StN9dtw==",
   "success": true,
   "projectFilePath": "D:\\experiments\\saal-digital\\WeatherForecastAdmin\\WeatherForecastAdmin.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.20.0-preview.1\\microsoft.visualstudio.azure.containers.tools.targets.1.20.0-preview.1.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\rabbitmq.client\\6.8.1\\rabbitmq.client.6.8.1.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\system.memory\\4.5.5\\system.memory.4.5.5.nupkg.sha512",
     "C:\\Users\\A.Mastrogiuseppe\\.nuget\\packages\\system.threading.channels\\7.0.0\\system.threading.channels.7.0.0.nupkg.sha512"

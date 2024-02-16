@@ -103,3 +103,4 @@ D:\experiments\saal-digital\WeatherForecastApiExt\obj\Debug\net8.0\refint\Weathe
 D:\experiments\saal-digital\WeatherForecastApiExt\obj\Debug\net8.0\WeatherForecastApiExt.pdb
 D:\experiments\saal-digital\WeatherForecastApiExt\obj\Debug\net8.0\WeatherForecastApiExt.genruntimeconfig.cache
 D:\experiments\saal-digital\WeatherForecastApiExt\obj\Debug\net8.0\ref\WeatherForecastApiExt.dll
+D:\experiments\saal-digital\WeatherForecastApiExt\obj\Debug\net8.0\WeatherForecastApiExt.sourcelink.json
