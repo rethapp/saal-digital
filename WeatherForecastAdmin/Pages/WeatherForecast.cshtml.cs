@@ -1,5 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
+using System.ComponentModel.DataAnnotations;
+using WeatherForecastAdmin.CustomAttributes;
 using WeatherForecastAdmin.Integrations;
 
 namespace WeatherForecastAdmin.Pages
@@ -11,15 +13,25 @@ namespace WeatherForecastAdmin.Pages
         private readonly ILogger<WeatherForecastModel> _logger;
         private readonly IWeatherForecastAddNotification _weatherForecastAddNotification;
 
-        public DateTime Date { get; set; }
-        public int TemperatureInCelcius { get; set; }
-        public string? Summary { get; set; }
+        [Required(ErrorMessage = "Please, enter a valid date")]
+        [DateRangeValidationAttribute]
+        [DataType(DataType.Date)]
+        //[DisplayFormat(ApplyFormatInEditMode = true, DataFormatString = "{0:dd.MM.yyyy}")]
+        public DateTime Date { get; set; } = DateTime.Now;
 
+        [Required(ErrorMessage="The temperature must be in the range -60 +60 degrees in Celsius")]
+        [Range(-60, 60)]
+        public int TemperatureInCelcius { get; set; } = 0;
+
+        [Required(ErrorMessage = "Please, describe the weather")]
+        public string? Summary { get; set; } = String.Empty;
+
+        
         public WeatherForecastModel(ILogger<WeatherForecastModel> logger,
                                     IWeatherForecastAddNotification weatherForecastAddNotification)
         {
             _logger = logger;
-            _weatherForecastAddNotification = weatherForecastAddNotification;
+            _weatherForecastAddNotification = weatherForecastAddNotification;            
         }
 
         public void OnGet()
@@ -28,7 +40,20 @@ namespace WeatherForecastAdmin.Pages
 
         public void OnPost()
         {
-            _weatherForecastAddNotification.WeatherForecastAdded(Date, TemperatureInCelcius, Summary!, 0);
+            if (ModelState.IsValid)
+            {
+
+                bool b = _weatherForecastAddNotification.WeatherForecastAdded(Date, TemperatureInCelcius, Summary!, 0);
+                ViewData["ResultOk"] = b == true ? "Message sent to the queue" : "";
+                ViewData["ResultKo"] = b == true ? "" : "Message NOT sent to the queue!";
+                
+                //reste the fields
+                Date = DateTime.Now;
+                TemperatureInCelcius = 0;
+                Summary = String.Empty;
+
+            }             
+            
         }
     }
 }

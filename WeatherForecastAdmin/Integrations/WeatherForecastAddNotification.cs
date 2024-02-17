@@ -31,7 +31,7 @@ namespace WeatherForecastAdmin.Integrations
             _logger = logger;
         }
 
-        public void WeatherForecastAdded(DateTime date, int temperatureInC, string summary, int attempts = 0)
+        public bool WeatherForecastAdded(DateTime date, int temperatureInC, string summary, int attempts = 0)
         {
             var message = new WeatherForecastReceivedMessage
             {
@@ -48,14 +48,20 @@ namespace WeatherForecastAdmin.Integrations
                                        $"Date: {date} " +
                                        $"Temperature in Celsius: {temperatureInC} " +
                                        $"Summary: {summary}");
+                return true;
             } 
-            catch (Exception ex)
+            catch
             {
                 Thread.Sleep(5000);
                 attempts++;
                 if (attempts < 5)
                 {
-                    WeatherForecastAdded(date, temperatureInC, summary, attempts);
+                    return WeatherForecastAdded(date, temperatureInC, summary, attempts);                    
+                } 
+                else
+                {
+                    _logger.LogWarning("Not possible to send the message to rabbitmq :-(");
+                    return false;
                 }
             }
             

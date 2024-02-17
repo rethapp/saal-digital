@@ -1,28 +1,53 @@
 ﻿@page
 @model WeatherForecastModel
 @{
-    ViewData["Title"] = "Enter weather forecast information";
+    ViewData["Title"] = "Weather forecast entry form";
 }
 <h1>@ViewData["Title"]</h1>
 
+<script>
+    
+    function resetResult() {
+        document.getElementById('lblResultOk').innerHTML = '';
+        document.getElementById('lblResultKo').innerHTML = '';
+    }
+
+</script>
 <body>
-    <form method="post" enctype="multipart/form-data" asp-controller="WeatherForecast" asp-action="Index">
+    <form id="frmSubmit" method="post" enctype="multipart/form-data" asp-controller="WeatherForecast" asp-action="Index">
         <table>
             <tr>
                 <td>Date: </td>
-                <td><input type="date" id="dtDate" name="date" /></td>
+                <td>
+                    <input type="date" id="dtDate" name="date" onfocus="resetResult()" value='@Model.Date.Date.ToString("yyyy-MM-dd")' />
+                    <span asp-validation-for="Date" class="text-danger"></span>
+                </td>
             </tr>
             <tr>
                 <td>Temperature (in Celcius): </td>
-                <td><input type="number" id="temperatureInC" name="temperatureInCelcius" /></td>
+                <td>                    
+                    <input type="number" id="temperatureInC" name="temperatureInCelcius" onfocus="resetResult()" 
+                        value="@Model.TemperatureInCelcius" />
+                    <span asp-validation-for="TemperatureInCelcius" class="text-danger"></span>
+                </td>
             </tr>
             <tr>
                 <td>Summary: </td>
-                <td><input type="text" id="txtSummary" name="summary" /></td>
+                <td>
+                    <input type="text" id="txtSummary" name="summary" onfocus="resetResult()" value="@Model.Summary" />
+                    <span asp-validation-for="Summary" class="text-danger"></span>
+                </td>
+            </tr>
+            <br />
+            <tr>                
+                <td colspan="2" align="center">                    
+                    <label id="lblResultOk" style="color:green">@ViewData["ResultOk"]</label>
+                    <label id="lblResultKo" style="color:red">@ViewData["ResultKo"]</label>
+                </td>
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Submit" /></td>
+                <td><input type="submit" value="Register" /></td>
             </tr>
         </table>
         <hr />
