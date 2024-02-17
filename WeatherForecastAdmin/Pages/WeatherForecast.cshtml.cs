@@ -13,7 +13,7 @@ namespace WeatherForecastAdmin.Pages
 
         public DateTime Date { get; set; }
         public int TemperatureInCelcius { get; set; }
-        public string Summary { get; set; }
+        public string? Summary { get; set; }
 
         public WeatherForecastModel(ILogger<WeatherForecastModel> logger,
                                     IWeatherForecastAddNotification weatherForecastAddNotification)
@@ -28,7 +28,7 @@ namespace WeatherForecastAdmin.Pages
 
         public void OnPost()
         {
-            _weatherForecastAddNotification.WeatherForecastAdded(Date, TemperatureInCelcius, Summary);
+            _weatherForecastAddNotification.WeatherForecastAdded(Date, TemperatureInCelcius, Summary!, 0);
         }
     }
 }

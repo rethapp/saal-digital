@@ -25,9 +25,12 @@ public class Worker : BackgroundService
         ConnectionFactory factory = new ConnectionFactory();
         factory.UserName = "tony";
         factory.Password = "koszka80";
-        //factory.VirtualHost = "/";            
+        factory.VirtualHost = "/";            
         factory.HostName = config.GetValue<string>("RabbitMqHost");
         factory.Port = AmqpTcpEndpoint.UseDefaultPort;
+
+        factory.AutomaticRecoveryEnabled = true;
+        factory.NetworkRecoveryInterval = TimeSpan.FromSeconds(10);
 
         try
         {
@@ -57,7 +60,16 @@ public class Worker : BackgroundService
     {
         while (!stoppingToken.IsCancellationRequested)
         {
-            _channel.BasicConsume(queue: queueName, autoAck: true, consumer: _consumer);
+            try
+            {
+                _channel.BasicConsume(queue: queueName, autoAck: true, consumer: _consumer);
+            } 
+            catch (Exception ex)
+            {
+                Thread.Sleep(5000);
+                _logger.LogError(ex.Message, ex);
+            }
+            
         }
         return Task.CompletedTask;
     }
