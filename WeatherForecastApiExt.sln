@@ -7,7 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastApiExt", "We
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastAdmin", "WeatherForecastAdmin\WeatherForecastAdmin.csproj", "{D278D705-978D-4949-8D29-9E004759431D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherForecastProcessor", "WeatherForecastProcessor\WeatherForecastProcessor.csproj", "{1483F70B-1002-47DF-92A5-CF241200E412}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastProcessor", "WeatherForecastProcessor\WeatherForecastProcessor.csproj", "{1483F70B-1002-47DF-92A5-CF241200E412}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "saaldigital.Web", "WeatherForecastUsers\saaldigital.Web.csproj", "{C345194D-26E5-4407-800A-F118C433CCFA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{1483F70B-1002-47DF-92A5-CF241200E412}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1483F70B-1002-47DF-92A5-CF241200E412}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1483F70B-1002-47DF-92A5-CF241200E412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C345194D-26E5-4407-800A-F118C433CCFA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C345194D-26E5-4407-800A-F118C433CCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C345194D-26E5-4407-800A-F118C433CCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C345194D-26E5-4407-800A-F118C433CCFA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

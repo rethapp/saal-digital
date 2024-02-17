@@ -11,7 +11,8 @@ services:
       - "8083:8080"
     depends_on:
       - "weather-postgres"
-    image: rethappmember1/saal-digital-weatherforecastapi:v1
+    image: rethappmember1/saal-digital-weatherforecastapi:v2
+    pull_policy: always
     networks:
       - dockerapi-dev
 
@@ -20,7 +21,7 @@ services:
     image: postgres:latest
     ports:
       - "5432:5432"
-    #restart: always
+    restart: always
     volumes:
       - db_volume:/var/lib/postgresql/data
     environment:
@@ -32,7 +33,7 @@ services:
 
   weatherforecast-processor:
     container_name: 'weatherforecastprocessor'
-    image: rethappmember1/saal-digital-weatherforecast-processor:v1
+    image: rethappmember1/saal-digital-weatherforecast-processor:v2
     depends_on:
       - "weather-postgres"
       - "rabbit-mq"
@@ -44,7 +45,8 @@ services:
     container_name: 'rabbit-mq'
     image: rabbitmq:3-management
     ports:
-      - "15672"
+      - "15672:15672"
+    restart: always
     environment:
       # watch out here!!!!!! when running the image from command line the env var are written with = not with :, for example: RABBITMQ_DEFAULT_USER=tony
       RABBITMQ_DEFAULT_USER: tony 
@@ -54,11 +56,23 @@ services:
 
   weatherforecast-admin:
     container_name: 'weatherforecastadmin'
-    image: rethappmember1/saal-digital-weatherforecast-admin:v1
+    image: rethappmember1/saal-digital-weatherforecast-admin:v2
+    pull_policy: always
     ports:
       - "80:8080"
     depends_on:
       - "rabbit-mq"
+    networks:
+      - dockerapi-dev
+   
+  weatherforecast-users:
+    container_name: 'weatherforecastusers'
+    image: rethappmember1/saal-digital-weatherforecast-users:v1
+    pull_policy: always
+    ports:
+      - "8082:8080"
+    depends_on:
+      - "weatherforecastapi"
     networks:
       - dockerapi-dev
 

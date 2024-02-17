@@ -22,7 +22,7 @@ namespace WeatherForecastApiExt.Controllers
 		public IEnumerable<WeatherForecast> Get()
 		{
 			_logger.LogInformation("Loading weather forecast information");
-			return _weatherDbContext.WeatherForecasts.ToArray();
+			return _weatherDbContext.WeatherForecasts.OrderByDescending(e => e.Date).ToArray();
 		}
 	}
 	
