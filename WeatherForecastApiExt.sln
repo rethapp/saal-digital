@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WeatherForecastProcessor", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "saaldigital.Web", "WeatherForecastUsers\saaldigital.Web.csproj", "{C345194D-26E5-4407-800A-F118C433CCFA}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "apigateway", "ApiGateway\apigateway.csproj", "{BEDE1CCF-EA4E-472A-BE64-5F06D54D7B95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C345194D-26E5-4407-800A-F118C433CCFA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C345194D-26E5-4407-800A-F118C433CCFA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C345194D-26E5-4407-800A-F118C433CCFA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BEDE1CCF-EA4E-472A-BE64-5F06D54D7B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEDE1CCF-EA4E-472A-BE64-5F06D54D7B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEDE1CCF-EA4E-472A-BE64-5F06D54D7B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEDE1CCF-EA4E-472A-BE64-5F06D54D7B95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

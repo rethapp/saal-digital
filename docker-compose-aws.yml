@@ -59,7 +59,7 @@ services:
     image: rethappmember1/saal-digital-weatherforecast-admin:v2
     pull_policy: always
     ports:
-      - "80:8080"
+      - "8084:8080"
     depends_on:
       - "rabbit-mq"
     networks:
@@ -73,6 +73,19 @@ services:
       - "8082:8080"
     depends_on:
       - "weatherforecastapi"
+    networks:
+      - dockerapi-dev
+  
+  apigateway:
+    container_name: 'apigateway'
+    image: rethappmember1/saal-digital-apigateway:v1
+    pull_policy: always
+    ports:
+      - "80:8080"
+    depends_on:
+      - "weatherforecastapi"
+      - "weatherforecast-users"
+      - "weatherforecast-admin"
     networks:
       - dockerapi-dev
 
