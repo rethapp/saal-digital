@@ -49,6 +49,7 @@ I have written also a very detailed txt file with all what I did, I could show y
 Because I had not much time, I could not implement all that I wanted to show you about my knowledge / capacities.
 I will improve the test project in the next week(s) with these features:
 
+- add gRPC to notify users when a new weather info is added.
 - add some other useful middlewares
 - add a second database and implement a second migration...
 - add a new table "Towns" in the database
