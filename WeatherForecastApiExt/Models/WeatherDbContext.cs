@@ -12,7 +12,8 @@ namespace WeatherForecastApiExt.Models
 
 		public DbSet<WeatherForecast> WeatherForecasts { get; set; }
 
-		protected override void OnModelCreating(ModelBuilder modelBuilder)
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
 		{
 			var random = new Random();
 			modelBuilder.Entity<WeatherForecast>().HasData(

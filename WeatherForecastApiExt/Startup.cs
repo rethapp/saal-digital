@@ -22,7 +22,7 @@ namespace WeatherForecastApiExt
 			services.AddControllers();
 			services.AddSwaggerGen(c =>
 			{
-				c.SwaggerDoc("v1", new OpenApiInfo { Title = "WeatherForecastAPI", Version = "v1" });
+				c.SwaggerDoc("v1", new OpenApiInfo { Title = "WeatherForecastAPI", Version = "v2" });
 			});
 			services.AddDbContext<WeatherDbContext>(
 				x => x.UseNpgsql(Configuration.GetConnectionString("WeatherDatabase")));
@@ -39,12 +39,12 @@ namespace WeatherForecastApiExt
 
 			logger.LogInformation("Database Migrated sucessfully");
 
-			if (env.IsDevelopment())
-			{
+			//if (env.IsDevelopment())
+			//{
 				app.UseDeveloperExceptionPage();
 				app.UseSwagger();
-				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WeatherForecastAPI v1"));
-			}
+				app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "WeatherForecastAPIExt v2"));
+			//}
 
 			app.UseHttpsRedirection();
 
