@@ -41,6 +41,12 @@ namespace WeatherForecastAdmin.Pages
         {
         }
 
+        private IActionResult doRedirect()
+        {
+            Thread.Sleep(3000);
+            return RedirectToPage("/WeatherForecast");
+        }
+
         public void OnPost()
         {
             if (ModelState.IsValid)
@@ -55,8 +61,15 @@ namespace WeatherForecastAdmin.Pages
                 TemperatureInCelcius = 0;
                 Summary = String.Empty;
 
-            }             
-            
+                //EXPL: I could redirect to page with some param so to show the green message... had no time...
+                //return RedirectToPage("/WeatherForecast");
+
+                //does not work
+                //Thread oThread = new Thread(new ThreadStart(() => { doRedirect(); }));
+                //oThread.Start();
+
+            }                     
+
         }
     }
 }

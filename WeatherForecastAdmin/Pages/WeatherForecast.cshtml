@@ -7,6 +7,19 @@
 
 <script>
     
+    //does not work :-(
+    function timerAndRedirect() {
+        document.getElementById('btnSubmit').disabled = "true";
+        var sec = 5;
+        var timer = setInterval(function () {            
+            sec--;
+            if (sec < 0) {
+                window.location.href = "/WeatherForecast";
+                clearInterval(timer);
+            }
+        }, 1000);
+    }
+
     function resetResult() {
         document.getElementById('lblResultOk').innerHTML = '';
         document.getElementById('lblResultKo').innerHTML = '';
@@ -47,7 +60,7 @@
             </tr>
             <tr>
                 <td></td>
-                <td><input type="submit" value="Register" /></td>
+                <td><input id="btnSubmit" type="submit" value="Register" onsubmit="timerAndRedirect()" /></td>
             </tr>
         </table>
         <hr />
