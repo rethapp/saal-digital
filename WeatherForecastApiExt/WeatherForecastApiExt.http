@@ -1,3 +1,4 @@
+### this file is used for testing purposes, but I used Advanced Rest Client
 @WeatherForecastApiExt_HostAddress = http://localhost:5006
 
 GET {{WeatherForecastApiExt_HostAddress}}/weatherforecast/

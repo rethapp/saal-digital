@@ -29,6 +29,8 @@ public class Worker : BackgroundService
         factory.HostName = config.GetValue<string>("RabbitMqHost");
         factory.Port = AmqpTcpEndpoint.UseDefaultPort;
 
+        //EXPL: the next two lines were not present in the original code!!! Necessary to reconnect the rabbitmq client
+        //in cases when the container inside docker is restarted!
         factory.AutomaticRecoveryEnabled = true;
         factory.NetworkRecoveryInterval = TimeSpan.FromSeconds(10);
 
@@ -36,7 +38,7 @@ public class Worker : BackgroundService
         {
             _connection = factory.CreateConnection();
         }
-        catch (Exception)
+        catch
         {
             for (var i = 0; i < 5; i++)
             {
@@ -53,7 +55,7 @@ public class Worker : BackgroundService
             arguments: null);
 
         _consumer = new EventingBasicConsumer(_channel);
-        _consumer.Received += ProcessWeatherForecastReceived;
+        _consumer.Received += ProcessWeatherForecastReceived!;
     }
 
     protected override Task ExecuteAsync(CancellationToken stoppingToken)
@@ -62,6 +64,8 @@ public class Worker : BackgroundService
         {
             try
             {
+                //EXPL: the message was sent by the Admin project and consumed ( dequeued ) here.
+                //actually the real operation is implemented into ProcessWeatherForecastReceived method.
                 _channel.BasicConsume(queue: queueName, autoAck: true, consumer: _consumer);
             } 
             catch (Exception ex)

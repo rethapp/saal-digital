@@ -13,6 +13,7 @@ namespace WeatherForecastProcessor
             Host.CreateDefaultBuilder(args)
                 .ConfigureServices((hostContext, services) =>
                 {
+                    //EXPL: DI pre-requisite to inject the repository into worker.
                     services.AddSingleton<IWeatherForecastRepository, WeatherForecastRepository>();
                     services.AddHostedService<Worker>();
                 });

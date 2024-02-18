@@ -7,6 +7,9 @@ using WeatherForecastAdmin.Integrations;
 namespace WeatherForecastAdmin.Pages
 {
 
+    //EXPL: this is the background logic to the main UI, a Razor page that allows to enter new weather forecast info
+    //I added some validation, using ValidationAttributes...
+    //The validation and the information for the user has been improved also.
     [BindProperties]
     public class WeatherForecastModel : PageModel
     {
@@ -26,7 +29,7 @@ namespace WeatherForecastAdmin.Pages
         [Required(ErrorMessage = "Please, describe the weather")]
         public string? Summary { get; set; } = String.Empty;
 
-        
+        //EXPL: dependency injection pattern detected, possible because of AddScoped....
         public WeatherForecastModel(ILogger<WeatherForecastModel> logger,
                                     IWeatherForecastAddNotification weatherForecastAddNotification)
         {

@@ -1,4 +1,7 @@
 #See https://aka.ms/customizecontainer to learn how to customize your debug container and how Visual Studio uses this Dockerfile to build your images for faster debugging.
+#EXPL: generated directly from VS. It is used from command line to build the docker images to publish to the docker hub registry.
+#from the directory where the .sln file is located, execute, for example:
+#docker build -f "d:\experiments\saal-digital\WeatherForecastAdmin\Dockerfile" -t rethappmember1/saal-digital-weatherforecast-admin:v2 .
 
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
 USER app

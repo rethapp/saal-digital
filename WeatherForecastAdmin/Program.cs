@@ -1,5 +1,6 @@
 using WeatherForecastAdmin;
 
+//EXPL: entry point... the real business logic for the startup is moved to the Startup class...
 public class Program
 {
     public static void Main(string[] args)

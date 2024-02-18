@@ -2,6 +2,8 @@
 
 namespace WeatherForecastApiExt.MIddlewares
 {
+
+	//EXPL: this class added as an extension method to the ApplicationBuilder, allows us to better understand what went wrong in case of errors
 	public class ExceptionHandlerMiddleware
 	{
 
@@ -36,7 +38,7 @@ namespace WeatherForecastApiExt.MIddlewares
 		}
 	}
 
-	// Extension method used to add the middleware to the HTTP request pipeline.
+	// EXPL: Extension method used to add the middleware to the HTTP request pipeline.
 	public static class ExceptionHandlerMiddlewareExtensions
 	{
 		public static IApplicationBuilder UseExceptionHandlerMiddleware(this IApplicationBuilder builder)

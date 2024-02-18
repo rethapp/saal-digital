@@ -16,6 +16,10 @@ namespace WeatherForecastAdmin
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+
+            //EXPL: standard startup BL... here I just added the WeatherForecastAddNotification service that will be injected
+            //into the class:
+            //public WeatherForecastModel(ILogger<WeatherForecastModel> logger, IWeatherForecastAddNotification weatherForecastAddNotification)
             services.AddScoped<IWeatherForecastAddNotification, WeatherForecastAddNotification>();
         }
 

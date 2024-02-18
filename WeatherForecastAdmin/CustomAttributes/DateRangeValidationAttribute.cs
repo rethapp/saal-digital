@@ -3,6 +3,9 @@ using System.ComponentModel.DataAnnotations;
 
 namespace WeatherForecastAdmin.CustomAttributes
 {
+
+    //EXPL: using standard validation attributes it was not possible to check if a date is not after than another date
+    //so I created this special validator that extends the ValidationAttribute. This validation is used inside the Razor page
     public class DateRangeValidationAttribute : ValidationAttribute
     {
 

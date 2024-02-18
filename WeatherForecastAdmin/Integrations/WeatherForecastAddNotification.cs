@@ -4,6 +4,12 @@ using WeatherForecastAdmin.Models;
 
 namespace WeatherForecastAdmin.Integrations
 {
+
+    //EXPL: this class actually implements the concept of event driven architecture, as the event relative to the 
+    //creation of a new weatherforecast info is published to the queue to rabbitmq.
+    //I had to improve the original code to manage the reconnection and a kind of retry logic
+    //A better retry logic could be implemented using external libraries (like Polly)
+    //The communication with rabbitmq could be improved using more agnostic libraries like Wolverine
     public class WeatherForecastAddNotification : IWeatherForecastAddNotification, IDisposable
     {
         private readonly IConnection _connection;
@@ -22,10 +28,26 @@ namespace WeatherForecastAdmin.Integrations
             factory.HostName = config.GetValue<string>("RabbitMqHost");
             factory.Port = AmqpTcpEndpoint.UseDefaultPort;
 
+            //EXPL: the next two lines manage the reconnection
             factory.AutomaticRecoveryEnabled = true;
             factory.NetworkRecoveryInterval = TimeSpan.FromSeconds(10);
 
-            _connection = factory.CreateConnection();
+            try
+            {
+                _connection = factory.CreateConnection();
+            }
+            catch
+            {
+                for (var i = 0; i < 5; i++)
+                {
+                    if (_connection != null)
+                        continue;
+                    Thread.Sleep(3000);
+                    try { _connection = factory.CreateConnection(); } catch { }
+                }
+                if (_connection == null) throw;
+            }
+
             _channel = _connection.CreateModel();
             _channel.QueueDeclare(queue: queueName, durable: false, exclusive: false, autoDelete: false, arguments: null);
             _logger = logger;
@@ -66,8 +88,6 @@ namespace WeatherForecastAdmin.Integrations
             }
             
         }
-
-        
 
         public void Dispose()
         {

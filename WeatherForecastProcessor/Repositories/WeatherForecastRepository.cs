@@ -8,6 +8,8 @@ using System.Threading.Tasks;
 
 namespace WeatherForecastProcessor.Repositories
 {
+
+    //EXPL: class implements the interface... necessary to DI..
     public class WeatherForecastRepository : IWeatherForecastRepository
     {
         private readonly IConfiguration _config;
@@ -19,6 +21,10 @@ namespace WeatherForecastProcessor.Repositories
             _config = config;
             _logger = logger;
         }
+
+        //EXPL: here we do not use EF but the Npgsql package to open the connection to postgres and perform the insert
+        //I had to fix two bugs that were present in the original code: one relative to the datetime type and one about
+        //using the parameters with command instead of direct sql query!!!
         public async Task SaveWeatherForecastInformation(DateTime date,
                                                          int temperatureInC,
                                                          string summary)
@@ -29,11 +35,13 @@ namespace WeatherForecastProcessor.Repositories
             DateTime dt = new DateTime(date.Year, date.Month, date.Day, DateTime.Now.Hour, DateTime.Now.Minute, 
                                         DateTime.Now.Second, DateTime.Now.Millisecond, DateTimeKind.Utc).AddTicks(4414);
 
+            //EXPL: var is used as it is inferred by the compiler at compile time.
             using var connection = new NpgsqlConnection(_config.GetConnectionString("WeatherDatabase"));
             connection.Open();
-            //string dml = "insert into WeatherForecasts (Date, TemperatureC, Summary) values (:dt, :temp, :summary)";
+            
             string dml = $"INSERT INTO public.\"WeatherForecasts\" (\"Date\", \"TemperatureC\", \"Summary\") VALUES (:dt, :temp, :summary)";
 
+            //EXPL: always good to use 'using' in order to immediately dispose the object cmd. Same for the connection obj
             using (NpgsqlCommand cmd = new NpgsqlCommand(dml, connection))
             {
                 cmd.Parameters.AddWithValue("dt", dt);

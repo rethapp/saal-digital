@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace WeatherForecastProcessor.Models
 {
+
+    //EXPL: this must be the same as the class used into the project Admin: there could have been a refactoring, using a shared library
     class WeatherForecastReceivedMessage
     {
         public DateTime Date { get; set; }

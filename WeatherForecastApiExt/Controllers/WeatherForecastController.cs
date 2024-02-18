@@ -2,12 +2,19 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Migrations.Operations;
 using System.Net.Mime;
+using WeatherForecastApiExt.Contexts;
 using WeatherForecastApiExt.Models;
 
 namespace WeatherForecastApiExt.Controllers
 {
-	
-	[ApiController]
+
+    //EXPL: this is the class that allows a client ( whatever in whatever language ) to communicate with our service
+    //the constructor implements the DI pattern and the methods are relative to the different HTTP methods: GET, PUT, POST etc...
+    // in the original code there was only a generic Get() method that returns all the weather forecasts records.
+    //I implemented all the other methods to demonstrate the versatility of the controller
+    //I did not write all the full variants that are possible for getting the parameters / body content, etc... FromQuery, FromBody...
+    //Also exists different method to return result...
+    [ApiController]
 	[Route("[controller]")]
 	public class WeatherForecastController : ControllerBase
 	{
